@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SectionHeading } from '../components/SectionHeading';
 import { personalInfo } from '../data/portfolio';
-import { Mail, Phone, MapPin, Github, Send, Copy, Check, ExternalLink, MessageSquare } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Globe, Send, Copy, Check, ExternalLink, MessageSquare } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export const Contact: React.FC = () => {
@@ -146,6 +146,48 @@ export const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors"
                 aria-label="Open GitHub Profile"
+              >
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center">
+                  <Linkedin className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-mono text-slate-400">LinkedIn Profile</h4>
+                  <p className="text-sm font-semibold text-white">linkedin.com/in/midhun-r-s</p>
+                </div>
+              </div>
+              <a
+                href={personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors"
+                aria-label="Open LinkedIn Profile"
+              >
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center">
+                  <Globe className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-mono text-slate-400">Portfolio Website</h4>
+                  <p className="text-sm font-semibold text-white break-all">port-folio-vert-theta.vercel.app</p>
+                </div>
+              </div>
+              <a
+                href={personalInfo.portfolioUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors"
+                aria-label="Open Portfolio Website"
               >
                 <ExternalLink className="w-4 h-4" />
               </a>

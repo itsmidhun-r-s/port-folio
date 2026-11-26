@@ -27,6 +27,8 @@ export const ResumeViewerModal: React.FC<ResumeViewerModalProps> = ({ isOpen, on
     const content = `R.S. MIDHUN
 ${personalInfo.location} | ${personalInfo.phone} | ${personalInfo.email}
 GitHub: ${personalInfo.github}
+LinkedIn: ${personalInfo.linkedin}
+Portfolio: ${personalInfo.portfolioUrl}
 
 PROFESSIONAL SUMMARY:
 ${personalInfo.summary}
@@ -56,7 +58,7 @@ PROJECTS:
 - Xtaken (Live: xtaken.in)
 
 EDUCATION:
-- Amrita College of Engineering and Technology — B.E. Computer Science and Engineering | 2022 – 2026 | CGPA: 7.2/10
+- Amrita College of Engineering and Technology — B.E. Computer Science and Engineering | 2022 – 2026 | CGPA: 7.52/10
 - St. Mary Goretty Higher Secondary School — Higher Secondary | 60.00% | 2022
 - St. Mary Goretty Higher Secondary School — SSLC | 77.80% | 2020
 
@@ -150,6 +152,24 @@ ADDITIONAL:
                 className="flex items-center gap-1 text-sky-400 hover:underline"
               >
                 github.com/{personalInfo.githubUsername}
+                <ExternalLink className="w-3 h-3" />
+              </a>
+              <a
+                href={personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-sky-400 hover:underline"
+              >
+                linkedin.com/in/midhun-r-s
+                <ExternalLink className="w-3 h-3" />
+              </a>
+              <a
+                href={personalInfo.portfolioUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-sky-400 hover:underline"
+              >
+                Portfolio Website
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>

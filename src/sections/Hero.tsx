@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, FileText, Mail, Github, MapPin, Sparkles, Box, Smartphone } from 'lucide-react';
+import { ArrowRight, FileText, Mail, Github, Linkedin, MapPin, Sparkles, Box, Smartphone, Globe } from 'lucide-react';
 import { personalInfo, quickStats } from '../data/portfolio';
 import { HeroScene } from '../3d/HeroScene';
 import { CanvasFallback } from '../3d/CanvasFallback';
@@ -100,6 +100,24 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
                 aria-label="GitHub Profile"
               >
                 <Github className="w-4 h-4" />
+              </a>
+              <a
+                href={personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-colors"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a
+                href={personalInfo.portfolioUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-colors"
+                aria-label="Portfolio Website"
+              >
+                <Globe className="w-4 h-4" />
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}

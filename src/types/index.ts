@@ -53,6 +53,8 @@ export interface PersonalInfo {
   location: string;
   github: string;
   githubUsername: string;
+  linkedin: string;
+  portfolioUrl: string;
   publicRepos: number;
   liveAppsCount: number;
   summary: string;

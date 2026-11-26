@@ -12,6 +12,8 @@ export const ResumeSection: React.FC<ResumeSectionProps> = ({ onOpenResumeModal 
     const content = `R.S. MIDHUN
 ${personalInfo.location} | ${personalInfo.phone} | ${personalInfo.email}
 GitHub: ${personalInfo.github}
+LinkedIn: ${personalInfo.linkedin}
+Portfolio: ${personalInfo.portfolioUrl}
 
 PROFESSIONAL SUMMARY:
 ${personalInfo.summary}
@@ -41,7 +43,7 @@ PROJECTS:
 - Xtaken (Live: xtaken.in)
 
 EDUCATION:
-- Amrita College of Engineering and Technology — B.E. Computer Science and Engineering | 2022 – 2026 | CGPA: 7.2/10
+- Amrita College of Engineering and Technology — B.E. Computer Science and Engineering | 2022 – 2026 | CGPA: 7.52/10
 - St. Mary Goretty Higher Secondary School — Higher Secondary | 60.00% | 2022
 - St. Mary Goretty Higher Secondary School — SSLC | 77.80% | 2020
 

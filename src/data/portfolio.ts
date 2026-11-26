@@ -9,6 +9,8 @@ export const personalInfo: PersonalInfo = {
   location: "Ramanparambu, Thuckalay, Kanyakumari District, Tamil Nadu",
   github: "https://github.com/itsmidhun-r-s",
   githubUsername: "itsmidhun-r-s",
+  linkedin: "https://linkedin.com/in/midhun-r-s",
+  portfolioUrl: "https://port-folio-vert-theta.vercel.app",
   publicRepos: 10,
   liveAppsCount: 6,
   summary:
@@ -213,7 +215,7 @@ export const educationList: Education[] = [
     institution: "Amrita College of Engineering and Technology",
     degree: "B.E. Computer Science and Engineering",
     duration: "2022 – 2026",
-    grade: "CGPA: 7.2 / 10",
+    grade: "CGPA: 7.52 / 10",
     details: "Focusing on core computer science foundations, algorithms, data structures, software engineering, and database management."
   },
   {

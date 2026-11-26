@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Github, Mail, Phone, Heart } from 'lucide-react';
+import { ArrowUp, Github, Linkedin, Globe, Mail, Phone, Heart } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
 
 export const Footer: React.FC = () => {
@@ -78,6 +78,28 @@ export const Footer: React.FC = () => {
                 >
                   <Github className="w-3.5 h-3.5 text-slate-300" />
                   github.com/{personalInfo.githubUsername}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={personalInfo.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-sky-400 transition-colors"
+                >
+                  <Linkedin className="w-3.5 h-3.5 text-sky-400" />
+                  linkedin.com/in/midhun-r-s
+                </a>
+              </li>
+              <li>
+                <a
+                  href={personalInfo.portfolioUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-violet-400 transition-colors"
+                >
+                  <Globe className="w-3.5 h-3.5 text-violet-400" />
+                  port-folio-vert-theta.vercel.app
                 </a>
               </li>
             </ul>
